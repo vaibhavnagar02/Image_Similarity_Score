@@ -17,6 +17,8 @@ temp4=[]
 temp5=[]
 temp6=[]
 temp7 = []
+temp8=[]
+temp9=[]
 
 
 Input_path = 'C://Users/vaibh/PycharmProjects/DIR/Duplicate_Image_Remover/Sparsh/87_-312_372'
@@ -35,17 +37,34 @@ for i in images_list:
     print("Image similarity of "+i+' with test.jpg is :'+str(score))    
     if score > 0.50 and score < 0.60:
         temp4.append(i)
+        temp8.append(score)
     elif score > 0.60 and score < 0.70:
             temp5.append(i)
     elif score > 0.70 and score < 0.80:
         temp6.append(i)
     elif score > 0.80:
         temp7.append(i)
+        temp9.append(score)
 
 print("similarity score between 0.50 and 0.60 are:",temp4)
 print("similarity score between 0.60 and 0.70 are:",temp5)
 print("similarity score between 0.70 and 0.80 are:", temp6)
 print("similarity score above 0.80 are:",temp7)
+
+
+
+from prettytable import PrettyTable
+
+columns = ["Segregation", "Number of images"]
+
+myTable = PrettyTable()
+
+# Add Columns
+myTable.add_column(columns[0], ["Minimum Similarity", "Maximum Similarity" ,"Between 50% and 60%","between 60% and 70%","Between 70% and 80%","Above 80%"])
+myTable.add_column(columns[1], [min(temp8) , max(temp9) , len(temp4) , len(temp5) , len(temp6) , len(temp7)])
+
+
+print(myTable)
 
 
 
