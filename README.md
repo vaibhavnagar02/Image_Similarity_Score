@@ -24,8 +24,13 @@ After that i have printed each image in a line between the respective score's of
 
 Then i have created a table to show the maximum similarity and minimum similarity as well as number of images in each of the segregation given above.
 
-![image](https://user-images.githubusercontent.com/87512533/181227183-2539a3c9-dffe-4d1f-ae45-ffb0c41bafca.png)
+![image](https://user-images.githubusercontent.com/87512533/181227414-19c470ab-63ec-4847-923d-8a037f0396c0.png)
 
+Then it will also make a different directory for the Images with their similarity score with the master image on top of the image.
+
+![image](https://user-images.githubusercontent.com/87512533/181227780-423f0204-ef4f-490d-9435-f6e534a17898.png)
+
+You can find the file in Scoree folder inside Duplicate Image Removal.
 
 ## Usage
 
@@ -36,3 +41,5 @@ Then i have created a table to show the maximum similarity and minimum similarit
 3.Sparsh/87_-312_372 File contains the list of images to be comapred with the Master Image.
 
 4.Clicking on the Similarityscore.py will give us our required code with the explanation given in the above compartment of WORKING.
+
+5.A directory of images with their similarity score is made , which u can see in the scoree folder in which under dir0 it will be visible.
